@@ -1,0 +1,18 @@
+.content-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.book-btn {
+  color: #ffffff;
+  background-color: rgb(78, 129, 158);
+  font-size: 20px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+}
