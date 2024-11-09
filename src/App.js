@@ -8,13 +8,16 @@ import CreateContext from './context/CreateContext'
 import './App.css'
 
 const App = () => {
-  const [stayList] = useState([])
+  const [stayList, setStayList] = useState([])
+
+  const addStayDetail = () => console.log('StayList Updated')
 
   return (
     <>
       <CreateContext.Provider
         value={{
           stayList,
+          addStayDetails: addStayDetail(),
         }}
       >
         <Switch>

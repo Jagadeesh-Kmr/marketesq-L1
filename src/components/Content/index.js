@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import Loader from 'react-loader-spinner'
-import {Link} from 'react-router-dom'
+
+import DisplayHotelData from '../DisplayHotelData'
 
 import './index.css'
 
@@ -12,32 +13,33 @@ const apiStatusConstants = {
 }
 
 const Content = () => {
-  const [apiResponse, SetApiResponse] = useState({
+  const [apiResponse, setApiResponse] = useState({
     status: apiStatusConstants.initial,
     stayData: [],
     errorMsg: '',
   })
 
   const getStayDetails = async () => {
-    SetApiResponse({
-      status: apiResponse.initial,
+    setApiResponse({
+      status: apiStatusConstants.inProgress,
       stayData: null,
       errorMsg: null,
     })
-    const url = 'https://jsonplaceholder.typicode.com/'
+
+    const url =
+      'https://eecf8975-6c57-4990-969b-6a32dc2c0aff.mock.pstmn.io/hotels/'
 
     const response = await fetch(url)
     if (response.ok === true) {
       const fetchedData = await response.json()
-      console.log(fetchedData)
       if (response.ok) {
-        SetApiResponse(prevApiDetails => ({
+        setApiResponse(prevApiDetails => ({
           ...prevApiDetails,
           status: apiStatusConstants.success,
           stayData: fetchedData,
         }))
       } else {
-        SetApiResponse(prevApiDetails => ({
+        setApiResponse(prevApiDetails => ({
           ...prevApiDetails,
           status: apiStatusConstants.failure,
           errorMsg: fetchedData.error_msg,
@@ -57,15 +59,22 @@ const Content = () => {
 
   const renderLoadingView = () => (
     <div>
-      <Loader type="ThreeDots" color="#202020" height="50" width="50" />{' '}
+      <Loader type="ThreeDots" color="#202020" height="50" width="50" />
     </div>
   )
 
-  const renderSuccessView = () => (
-    <>
-      <p>SuccessFully Fetched Data</p>
-    </>
-  )
+  const renderSuccessView = () => {
+    const {stayData} = apiResponse
+    const updatedData = stayData[0]
+
+    return (
+      <>
+        <ul className="hotel-data-ul">
+          <DisplayHotelData displayHotelData={updatedData} />
+        </ul>
+      </>
+    )
+  }
 
   const renderStayDetails = () => {
     const {status} = apiResponse
@@ -86,13 +95,8 @@ const Content = () => {
   return (
     <>
       <div className="content-main-div">
-        <Link to="/stayDetails">
-          <button type="button" className="book-btn">
-            Book
-          </button>
-        </Link>
-        <p>Discover</p>
         {renderStayDetails()}
+        <p>Discover</p>
       </div>
     </>
   )
