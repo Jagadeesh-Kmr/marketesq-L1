@@ -1,0 +1,215 @@
+.cart-list {
+  width: 900px;
+  list-style-type: none;
+  margin-left: 70px;
+}
+
+.cart-hotel-main-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 980px;
+}
+
+.cart-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto';
+  color: #434647;
+}
+
+.hotel-cart-img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.hotel-cart-p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-no-of-rooms-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 70px;
+  margin-bottom: 80px;
+  margin-top: 28px;
+}
+
+.hotel-cart-h1 {
+  font-size: 25px;
+  margin-left: 70px;
+}
+
+.hotel-rooms-h1 {
+  font-size: 25px;
+}
+
+.payment-cart-h1 {
+  font-size: 25px;
+  margin-bottom: 70px;
+  margin-top: 35px;
+}
+
+.quantity-p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.quantity-controller-button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.quantity-icon {
+  font-size: 20px;
+  margin: 8px;
+}
+
+.price-div {
+  margin-right: 90px;
+}
+
+.cart-payment-btn-div {
+  margin-bottom: 70px;
+  margin-top: 0px;
+}
+
+.price-btn {
+  color: #ffffff;
+  background-color: rgb(78, 129, 158);
+  font-size: 20px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+}
+
+.token-p {
+  font-size: 11px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.person-details-bg-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4e0e4;
+  width: 900px;
+  height: 280px;
+  padding-left: 70px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.p-d-input {
+  border: 0;
+  width: 300px;
+  height: 50px;
+  outline: none;
+  border-radius: 8px;
+  color: #475569;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.pay-now-btn-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.pay-now-btn {
+  color: rgb(78, 129, 158);
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid rgb(78, 129, 158);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    margin: 60px 0px 60px 0px;
+    padding: 40px 50px 0px 42px;
+    box-shadow: 10px 10px 80px 0px #434647;
+    border-radius: 10px;
+  }
+
+  .cart-hotel-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .cart-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .price-div {
+    margin: 0px;
+  }
+
+  .pay-now-btn-div {
+    justify-content: center;
+    margin: 0px;
+    margin-right: 35px;
+    margin-bottom: 40px;
+  }
+
+  .cart-no-of-rooms-container {
+    margin: 0px;
+  }
+
+  .price-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .payment-cart-h1 {
+    display: none;
+  }
+
+  .person-details-bg-div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    padding-left: 50px;
+    padding-top: 20px;
+    background-color: transparent;
+  }
+
+  .p-d-input {
+    width: 200px;
+    font-size: 15px;
+    border: 1px solid #475569;
+  }
+}

@@ -2,8 +2,7 @@ import {Link, withRouter} from 'react-router-dom'
 
 import {RiFileSearchLine} from 'react-icons/ri'
 import {MdOutlineCall} from 'react-icons/md'
-
-import {CgProfile} from 'react-icons/cg'
+import {BiBuildings} from 'react-icons/bi'
 
 import './index.css'
 
@@ -17,8 +16,8 @@ const Header = () => (
           </Link>
 
           <li className="nav-menu-item-mobile-home">
-            <Link to="/" className="nav-link">
-              <CgProfile />
+            <Link to="/stayDetails" className="nav-link">
+              <BiBuildings />
             </Link>
           </li>
         </div>
@@ -30,12 +29,12 @@ const Header = () => (
 
           <ul className="nav-menu-home">
             <li className="nav-menu-item">
-              <Link to="/jobs" className="nav-link">
-                Discover
+              <Link to="/stayDetails" className="nav-link">
+                My Stay
               </Link>
             </li>
             <li className="nav-menu-item">
-              <Link to="/bookmarks" className="nav-link">
+              <Link to="/" className="nav-link">
                 Services
               </Link>
             </li>
@@ -51,12 +50,12 @@ const Header = () => (
       <div className="nav-menu-mobile">
         <ul className="nav-menu-list-mobile">
           <li className="nav-menu-item-mobile">
-            <Link to="/jobs" className="nav-link">
+            <Link to="/" className="nav-link">
               <RiFileSearchLine className="nav-bar-icon" />
             </Link>
           </li>
           <li className="nav-menu-item-mobile">
-            <Link to="/bookmarks" className="nav-link">
+            <Link to="/" className="nav-link">
               <MdOutlineCall className="nav-bar-icon" />
             </Link>
           </li>

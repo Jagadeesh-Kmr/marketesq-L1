@@ -3,5 +3,95 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 80px 0px 40px 0px;
   min-height: 90vh;
+  font-family: 'Roboto';
+  color: #434647;
+}
+
+.home-main-h1 {
+  font-size: 34px;
+  margin-bottom: 70px;
+  font-family: monospace;
+  text-decoration: underline;
+}
+
+.hotel-data-ul {
+  height: 2100px;
+}
+
+.services-h1 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-top: 70px;
+}
+
+.services-main-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 40px;
+}
+
+.home-hr-line {
+  width: 1400px;
+  color: #434647;
+  margin-top: 100px;
+}
+
+.services-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 40px;
+  height: 180px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 10px #d4e0e4;
+  border-radius: 8px;
+}
+
+.s-h {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.s-p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .services-h1 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .home-main-h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  .hotel-data-ul {
+    height: 1340px;
+  }
+
+  .home-hr-line {
+    width: 350px;
+    margin-top: 40px;
+  }
+
+  .services-main-ul {
+    width: 100%;
+    margin: 10px 40px 10px 0px;
+  }
+
+  .s-h {
+    font-size: 18px;
+  }
 }

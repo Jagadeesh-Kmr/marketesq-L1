@@ -1,9 +1,12 @@
 import Header from '../Header'
+import CartListView from '../CartListView'
+import Footer from '../Footer'
 
 const Cart = () => (
   <>
     <Header />
-    <h1>My Cart</h1>
+    <CartListView />
+    <Footer />
   </>
 )
 

@@ -1,0 +1,103 @@
+@media screen and (max-width: 768px) {
+  .cart-empty-img {
+    width: 203px;
+    height: 175px;
+    top: 142px;
+    left: 79px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .cart-empty-heading {
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #1e293b;
+  }
+
+  .cart-empty-desc {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #64748b;
+  }
+
+  .shop-now-btn {
+    background-color: rgb(78, 129, 158);
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 12px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.cart-empty-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-empty-view-container {
+    width: 100vw;
+    margin-bottom: 100px;
+  }
+
+  .cart-empty-img {
+    width: 425.0262756347656px;
+    height: 367.00347900390625px;
+  }
+
+  .cart-empty-heading {
+    font-family: DM Sans;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #1e293b;
+  }
+
+  .cart-empty-desc {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #64748b;
+  }
+
+  .shop-now-btn {
+    background-color: rgb(78, 129, 158);
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    cursor: pointer;
+  }
+}
