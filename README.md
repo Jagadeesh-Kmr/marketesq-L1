@@ -10,7 +10,7 @@ Technologies used: React JS, JS, CSS, Bootstrap, Routing, REST API Calls, React 
 
 #Project-Explanation
     
-  - Home Route
+  - Home
     - Users can navigate to Home, My Stay routes using links in the Navbar.
     - Users can also navigate to Home route by clicking on **Brisphere** logo.
     - Users can explore Hotel details like location, price, ratings.
